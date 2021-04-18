@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const USERS_REST_API_URL = 'http://localhost:8080/api/transactions';
+const USERS_REST_API_URL = 'http://localhost:8080/api/payments/get-all';
 
 class TransactionService {
     getTransactions(){

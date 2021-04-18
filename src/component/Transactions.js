@@ -31,9 +31,17 @@ class Transactions extends React.Component {
                     {
                         this.state.transactions.map(
                             transaction =>
-                            <tr key = {transaction.id}>
-                        <td>{transaction.id}</td>
-                        <td>{transaction.date}</td>
+                            <tr key = {transaction.payment_id}>
+                        <td>{transaction.payment_id}</td>
+                        <td> {new Intl.DateTimeFormat('en-GB', {
+                            month: 'long',
+                            day: '2-digit',
+                            year: 'numeric',
+                            hour: 'numeric',
+                            minute: 'numeric',
+                            second: 'numeric'
+                        }).format(new Date(transaction.createdAt))}</td>
+
                         <td>{transaction.amount}</td>
                         <td>{transaction.points}</td>
                         </tr>
