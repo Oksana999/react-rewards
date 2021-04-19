@@ -1,0 +1,17 @@
+.App-points {
+    display: flex;
+    justify-content: flex-start;
+    color: aqua;
+}
+.Tansactions-header {
+  font-weight: bold;
+    /*color: darkkhaki;*/
+}
+.transactions {
+    color: aqua;
+}
+hr {
+    color: darkcyan;
+    background-color: darkcyan;
+    height: 5px;
+}
