@@ -37,7 +37,7 @@ class Transactions extends React.Component {
     render() {
         return (
             <div>
-                <h2 className="text-center" className = "transactions">Transactions List </h2>
+                <h2 className="text-center">Transactions List </h2>
                 <table className="table table-striped">
                     <thead>
                     <tr className="Tansactions-header">

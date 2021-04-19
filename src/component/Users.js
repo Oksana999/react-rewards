@@ -19,15 +19,10 @@ import "./User.css"
         });
     }
 
-
-
-
-
     render() {
         const handleChange = (e) =>{
             console.log(this.state.users);
-        //    { userId: 7, name: "Sara Esposito", email: "s_esposito@mail.com" }
-          const userId =   this.state.users.filter(user => user.name == e.target.value)[0].userId;
+          const userId =   this.state.users.filter(user => user.name === e.target.value)[0].userId;
           this.props.setId(userId)
             this.setState({value:e.target.value})
         }
@@ -38,8 +33,6 @@ import "./User.css"
         }
         return (
             <div>
-                {/*<h3 className="text-center">Select User </h3>*/}
-
                 <div id="App">
                     <div className="select-container">
                         <label>Select User : </label>
@@ -56,7 +49,6 @@ import "./User.css"
                         <select value={this.state.days} onChange={handleChangeDays}>
                             <option value='30'>30 days</option>
                             <option value='90'>90 days</option>
-
                         </select>
                     </div>
                 </div>
